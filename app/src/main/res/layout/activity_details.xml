@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.samuel.yoga.DetailsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXERCISES"
+        android:id="@+id/exercise_details"
+        android:background="@color/colorPrimary"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:padding="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:padding="30dp"
+        android:src="@drawable/bow_pose"
+        android:id="@+id/image"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="READY"
+        android:layout_above="@+id/btn_start"
+        android:id="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="START"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        app:buttonColor="@color/colorPrimary"
+        app:cornerRadius="2dp"
+        app:shadowEnabled="true"
+        app:shadowHeight="3dp" />
+
+</RelativeLayout>
